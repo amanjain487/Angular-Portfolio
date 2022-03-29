@@ -1,0 +1,13 @@
+li a.active,
+li a:hover {
+    background: #3bb9f0;
+    transition: 0.5s;
+}
+
+li {
+    margin: 0px 15px;
+}
+
+a {
+    border-radius: 15px;
+}

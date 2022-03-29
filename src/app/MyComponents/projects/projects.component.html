@@ -1,0 +1,17 @@
+<div class="container mx-auto mt-4">
+    <div class="row">
+
+        <div *ngFor="let p of projects" class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{p.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{p.language}}</h6>
+                    <p class="card-text">{{p.description}}</p>
+                    <a href="#" class="btn" href={{p.link}}>GitHub Link</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
