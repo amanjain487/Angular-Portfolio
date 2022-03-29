@@ -3,11 +3,13 @@
 
         <div *ngFor="let exp of experience_details" class="col-md-4">
             <div class="card" style="width: 18rem;">
-                <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                <img src={{exp.image_path}} class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{exp.name}}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{exp.role}}</h6>
-                    <p class="card-text">{{exp.description}}</p>
+                    <h6 class="card-subtitle mb-2 text-muted">{{exp.from}} - {{exp.to}}</h6>
+
+                    <p *ngFor="let desc of exp.description" class="card-text">{{desc}}</p>
                 </div>
             </div>
         </div>

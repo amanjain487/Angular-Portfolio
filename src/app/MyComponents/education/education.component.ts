@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class EducationComponent implements OnInit {
 
   education_details = [
-    { name: 'PUCSD', score: '99.99%', year: '2019-22' },
+    {image_path: "../../../assets/images/mca.jpg", name: 'Department of Computer Science', score: '9.54 CGPA', year: '2019-2022'},
+    {image_path: "../../../assets/images/bca.jpg", name: 'SRM University', score: '8.92 CGPA', year: '2016-2019'},
+    {image_path: "../../../assets/images/12th.jpg", name: 'Sairam Matric Hr. Sec School', score: '91.4%', year: '2015'},
+    {image_path: "../../../assets/images/10th.JPG", name: 'Sairam Matric Hr. Sec School', score: '97.4%', year: '2013'},
   ];
   
   constructor() { }

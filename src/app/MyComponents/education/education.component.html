@@ -3,7 +3,7 @@
 
         <div *ngFor="let e of education_details" class="col-md-4">
             <div class="card" style="width: 18rem;">
-                <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+                <img src={{e.image_path}} class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{e.name}}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{e.year}}</h6>

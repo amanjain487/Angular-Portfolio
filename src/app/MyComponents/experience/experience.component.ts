@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
   experience_details = [
-    {name: 'Company Name', role: 'Role', description: 'Description of the work here'},
-  ];
+      {image_path: "../../../assets/images/mathongo.jpg", name: 'MathonGo', role: 'Software Development and Automation', from: "June, 2021", to: "Present", description: ["AWS Lambda Functions, Python-Selenium, Database-Handling", "Managing a group of 5-8 Interns."]
+    },
+    {image_path: "../../../assets/images/mathongo.jpg", name: 'MathonGo', role: 'Data Science Intern', from: "January, 2021", to: "May, 2021", description: ["Gather, Analyze and Visualize Data from MARKS App, QUIZRR Platform."]
+    },
+    {image_path: "../../../assets/images/mathongo.jpg", name: 'MathonGo', role: 'Image Processing Intern', from: "November, 2020", to: "December, 2020", description: ["Process PDFs and extract out the content from PDFs in LaTeX code and manage interns."]
+    },
+    ];
 
   constructor() { }
 
